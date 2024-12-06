@@ -1,0 +1,52 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "types": ["bun-types", "node"],
+    "outDir": "./dist/out-tsc",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@root": ["./*"],
+      "@server/*": ["server/*"]
+    },
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "jsx": "react-jsx" // Добавьте эту строку для поддержки JSX
+  },
+  "include": [
+    "src/**/*.ts",
+    "Mainserver.ts",
+    "server/**/*.ts",
+    "server/types.d.ts",
+    "./src/AddTrack.tsx",
+    "src/*",
+    "server/*",
+    "src/components/*"
+  ],
+  "exclude": ["node_modules"],
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

@@ -1,0 +1,179 @@
+/* Основной контейнер для маингрида */
+.cieplica_maingrid {
+  display: flex;
+  flex-direction: column; /* Элементы располагаются вертикально */
+  height: 100vh; /* Высота экрана */
+  overflow-y: auto; /* Позволяет прокручивать содержимое */
+}
+
+/* Кнопка для открытия сайдбара */
+.sidebarisopenbutton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  max-width: 12%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+/* Сайдбар */
+.cieplica_sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #3897f0;
+  width: 250px;
+  padding: 15px;
+  position: fixed; /* Фиксируем сайдбар на экране */
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-100%); /* Изначально скрыт */
+  opacity: 0; /* Прозрачный при скрытии */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Плавная анимация */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Состояние, когда сайдбар открыт */
+.cieplica_sidebar.open {
+  transform: translateX(0); /* Появляется */
+  opacity: 1; /* Полностью видимый */
+}
+
+/* Стили для элементов в сайдбаре */
+.cieplica_sidebar_item {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Отступы между кнопками */
+.cieplica_sidebar_item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Изображение кнопки открытия сайдбара */
+.sidebarImg {
+  max-width: 40%;
+}
+
+/* Логотип */
+.logocontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30%;
+  padding-top: 10%;
+  max-width: 40%;
+  max-height: 40%;
+}
+
+/* Логотип */
+.welcomelogo {
+  display: flex;
+  max-width: 70%;
+  max-height: 70%;
+}
+.sidebarImg2{
+max-height: 30px
+;
+}
+.sidebarisopenbutton2 {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  max-width: 24%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+h1{
+  position: relative;
+  margin: 5% 0  0 30% ;
+}
+
+
+
+
+.media {
+  position: relative;
+  margin-left: 70%; /* Автоматическое смещение элемента вправо */
+  justify-content: flex-end;
+  max-width:  100px;
+  max-height: 100px;
+}
+/* Кнопка Instagram */
+.mediaframe1 {
+  background-color: #3897f0;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 20px;
+  margin-left: 900px;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.mediaframe1:hover {
+  background-color: #3083c7;
+  transform: scale(1.05);
+}
+
+.mediaframe1:active {
+  transform: scale(1);
+}
+
+.mediaframe1 a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.mediaframe1 img {
+  width: 20px;
+  margin-right: 8px;
+  padding-left: 10px;
+}
+
+/* Контейнер для кнопки */
+.media {
+  position: relative;
+  margin-left: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+.gridofinfo{
+  display: flex;
+  background-color: #3897f0;
+}
+.gridofpause{
+  display: flex;
+  min-height: 50px;
+  min-width: 100%;
+  background-color: #3897f0;
+}

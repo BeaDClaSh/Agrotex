@@ -1,0 +1,39 @@
+{
+  "name": "stronadlastaszka",
+  "module": "server.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "sass-embedded": "^1.82.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "client": "vite",
+    "server": "bun run --hot server.ts",
+    "start": "concurrently 'bun run server' 'bun run client'"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/formidable": "^3.4.5",
+    "@types/react": "^18.3.13",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "axios": "^1.7.7",
+    "concurrently": "^9.0.1",
+    "cookie": "^1.0.1",
+    "cors": "^2.8.5",
+    "formidable": "^3.5.1",
+    "jose": "^5.9.2",
+    "mysql2": "^3.11.3",
+    "rea": "^0.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "uuid": "^11.0.2",
+    "vite": "^6.0.2"
+  }
+}
